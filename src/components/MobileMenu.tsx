@@ -19,7 +19,7 @@ const MobileMenu: FC<IMobileMenu> = ({
   return (
     <div
       className={cn(
-        "container flex flex-col justify-start items-center gap-[50px] lg:min-h-[calc(100vh-120px)] md:pt-[11px] pb-[30px]",
+        "container flex flex-col justify-between items-center gap-[50px] md:pt-[11px] pb-[30px]",
         className
       )}
     >

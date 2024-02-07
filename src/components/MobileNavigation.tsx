@@ -50,18 +50,22 @@ const topMenuList = [
   {
     title: "Item 1",
     link: "/",
+    icon: "Smartphone",
   },
   {
     title: "Item 2",
     link: "/",
+    icon: "Filter",
   },
   {
     title: "Item 3",
     link: "/",
+    icon: "Bot",
   },
   {
     title: "Item 4",
     link: "/",
+    icon: "Apple",
   },
 ];
 

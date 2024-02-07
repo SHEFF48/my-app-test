@@ -1,4 +1,4 @@
-import { Bot, Filter, Smartphone } from "lucide-react";
+import { Apple, Bot, Filter, Smartphone } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 
@@ -34,6 +34,7 @@ const TopBar = () => {
             href={"/"}
             className="hidden lg:flex gap-[1px] justify-center items-center"
           >
+            <Apple className="h-[14px]" />
             Menu item 4
           </Link>
         </nav>
