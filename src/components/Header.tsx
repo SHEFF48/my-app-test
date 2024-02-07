@@ -1,6 +1,6 @@
 import React from "react";
-import DesctopNavigation from "./DesctopNavigation";
-import MobileNavigation from "./MobileNavigation";
+import DesctopNavigation from "./Navigation/DesctopNavigation";
+import MobileNavigation from "./Navigation/MobileNavigation";
 import TopBar from "./TopBar";
 import { BurgerContextProvider } from "@/context/BurgerCotext";
 

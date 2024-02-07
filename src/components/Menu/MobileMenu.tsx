@@ -1,6 +1,6 @@
 import React, { FC } from "react";
-import SearchBar from "./SearchBar";
-import MenuList from "./Menu/MenuListClient";
+import SearchBar from "../SearchBar";
+import MenuList from "./MenuListClient";
 import { cn } from "@/lib/utils";
 import { useBurgerContext } from "@/hooks/useBurgerContext";
 

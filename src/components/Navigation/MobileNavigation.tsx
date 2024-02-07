@@ -1,10 +1,10 @@
 "use client";
 
 import React, { FC, useContext, useState } from "react";
-import Logo from "./Logo";
-import MobileMenu from "./MobileMenu";
+import Logo from "../Logo";
+import MobileMenu from "../Menu/MobileMenu";
 import { cn } from "@/lib/utils";
-import BurgerButton from "./BurgerButton";
+import BurgerButton from "../BurgerButton";
 import { useBurgerContext } from "@/hooks/useBurgerContext";
 
 interface IMobileMenu {

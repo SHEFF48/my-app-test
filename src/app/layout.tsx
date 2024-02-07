@@ -7,6 +7,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 import { ThemeProvider } from "@/components/theme-provider";
+import ShareSocial from "@/components/ShareSocial";
 
 export const fontSans = FontSans({
   subsets: ["latin"],
@@ -41,6 +42,7 @@ export default function RootLayout({
           <Header />
           {children}
           <Footer />
+          <ShareSocial className=" hidden lg:fixed left-0 top-[286px] " />
         </ThemeProvider>
       </body>
     </html>

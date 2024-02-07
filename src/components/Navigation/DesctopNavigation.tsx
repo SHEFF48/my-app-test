@@ -1,7 +1,7 @@
 import React from "react";
-import Logo from "./Logo";
-import SearchBar from "./SearchBar";
-import MenuList from "./Menu/MenuList";
+import Logo from "../Logo";
+import SearchBar from "../SearchBar";
+import MenuList from "../Menu/MenuList";
 
 const DesctopNavigation = () => {
   return (
