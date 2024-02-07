@@ -44,7 +44,11 @@ const SocialLinks = () => {
         const Icon = (icons as LucideIconType)[iconName] as React.ComponentType;
 
         return (
-          <Link href={socialIcon.link} key={index}>
+          <Link
+            href={socialIcon.link}
+            key={index}
+            aria-label={`Read more about ${socialIcon.link}`}
+          >
             <Icon />
           </Link>
         );
