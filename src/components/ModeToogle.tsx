@@ -23,6 +23,7 @@ export function ModeToggle() {
       className="w-[54px] h-[29px]"
       checked={isDark}
       onCheckedChange={() => switchHandler()}
+      aria-label="Switch Theme Button"
     />
   );
 }

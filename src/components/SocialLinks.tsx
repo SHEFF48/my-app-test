@@ -11,27 +11,27 @@ const SocialLinks = () => {
   const socialIcons = [
     {
       name: "Facebook",
-      link: "https://facebook",
+      link: "https://facebook.com",
     },
     {
       name: "Twitter",
-      link: "https://facebook",
+      link: "https://twitter.com",
     },
     {
       name: "Instagram",
-      link: "https://facebook",
+      link: "https://instagram.com",
     },
     {
       name: "Youtube",
-      link: "https://facebook",
+      link: "https://youtube.com",
     },
     {
       name: "Newspaper",
-      link: "https://facebook",
+      link: "https://newspaper.com",
     },
     {
       name: "Rss",
-      link: "https://facebook",
+      link: "https://rss.com",
     },
   ];
   return (
