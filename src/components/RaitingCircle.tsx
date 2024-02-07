@@ -9,12 +9,7 @@ interface IRate {
   className?: string;
 }
 
-const RaitingCircle: FC<IRate> = ({
-  votes = 0,
-  rate = 0,
-  userRate = 0,
-  className,
-}) => {
+const RaitingCircle: FC<IRate> = ({ votes = 0, rate = 0, className }) => {
   return (
     <div
       className={cn(
@@ -22,14 +17,13 @@ const RaitingCircle: FC<IRate> = ({
         className
       )}
     >
-      <CircularProgressBar rate={rate} />
+      <CircularProgressBar rate={Number(rate.toFixed(1))} />
 
       <div className="description text-white">
         <h3 className="text-[24px] font-extrabold">Players</h3>
         <p className="text-[16px] font-medium">{votes.toFixed(0)} votes</p>
         <p className="text-[16px] font-bold">
-          Your raiting{" "}
-          <span className="text-[#F9B936]">{userRate.toFixed(1)}</span>
+          Your raiting <span className="text-[#F9B936]">{rate.toFixed(1)}</span>
         </p>
       </div>
     </div>
