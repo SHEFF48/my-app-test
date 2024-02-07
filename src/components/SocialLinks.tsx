@@ -2,6 +2,11 @@ import * as icons from "lucide-react";
 import Link from "next/link";
 import React from "react";
 
+// Define a type for Lucide icons
+type LucideIconType = {
+  [key: string]: React.FC<any> | any;
+};
+
 const SocialLinks = () => {
   const socialIcons = [
     {
@@ -34,7 +39,9 @@ const SocialLinks = () => {
       {socialIcons.map((socialIcon, index) => {
         const iconName =
           socialIcon.name[0].toUpperCase() + socialIcon.name.slice(1);
-        const Icon = icons[iconName];
+
+        // Treat Lucide icons as a dictionary and use type assertion
+        const Icon = (icons as LucideIconType)[iconName] as React.ComponentType;
 
         return (
           <Link href={socialIcon.link} key={index}>
