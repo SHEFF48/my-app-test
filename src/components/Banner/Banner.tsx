@@ -62,9 +62,9 @@ const Banner = () => {
         />
       </div>
       <div className="bottom-block hidden lg:flex justify-between items-center pl-[56px] pr-[33px] h-[50px]">
-        <ul className="flex">
+        <ul className="flex justify-start">
           <li className="border-r border-[#707070]">
-            <Link href={"/"} className="px-[19px] text-[16px] text-[#707070]">
+            <Link href={"/"} className="pr-[19px] text-[16px] text-[#707070]">
               Lorem Ipsum is simply dummy
             </Link>
           </li>
