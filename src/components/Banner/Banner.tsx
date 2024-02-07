@@ -32,14 +32,14 @@ const Banner = () => {
             <div className="buttons gap-[8px] hidden lg:flex">
               <Link
                 href={"/"}
-                className="flex justify-between items-center text-[18px] gap-[3px] px-[13px] h-[28px] border rounded-[17px] text-white tracking-[.5px]"
+                className="flex justify-between items-center text-[18px] gap-[3px] px-[13px] h-[28px] border border-white rounded-[17px] text-white tracking-[.5px]"
               >
                 <Apple className="h-[13px] w-fit" />
                 Android
               </Link>
               <Link
                 href={"/"}
-                className="flex justify-between items-center text-[18px] gap-[3px] px-[13px] h-[28px] border rounded-[17px] text-white tracking-[.5px]"
+                className="flex justify-between items-center text-[18px] gap-[3px] px-[13px] h-[28px] border border-white rounded-[17px] text-white tracking-[.5px]"
               >
                 <Apple className="h-[13px] w-fit" />
                 iOS
