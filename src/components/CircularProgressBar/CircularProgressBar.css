@@ -1,0 +1,30 @@
+/* CircularProgressBar.css */
+
+.circular-progress-bar {
+  position: relative;
+}
+
+.progress-circle {
+  fill: none;
+  stroke-width: 10; /* ширина круговой дорожки */
+}
+
+.progress-circle-background {
+  fill: none;
+  stroke: conic-gradient(
+    from 180deg at 50% 50%,
+    rgb(220, 74, 25),
+    rgb(252, 197, 57) Infinity,
+    rgb(220, 74, 25)
+  );
+  stroke-width: 10; /* ширина круговой дорожки */
+}
+
+.progress-indicator {
+  fill: none;
+  stroke-width: 10; /* ширина индикатора прогресса */
+  stroke-linecap: round;
+  transform: rotate(-90deg); /* начальный угол вращения */
+  transform-origin: 50% 50%;
+  transition: stroke-dashoffset 0.5s ease;
+}

@@ -41,8 +41,8 @@ const Banner = () => {
           </div>
         </div>
         <RaitingCircle
-          rate={6}
-          userRate={3}
+          rate={6.4}
+          userRate={6.4}
           votes={12}
           className="hidden lg:flex"
         />
@@ -76,7 +76,7 @@ const Banner = () => {
           </li>
         </ul>
 
-        <RaitingLine rate={9} />
+        <RaitingLine rate={6.4} />
       </div>
     </div>
   );

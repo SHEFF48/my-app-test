@@ -1,5 +1,6 @@
 import { cn } from "@/lib/utils";
 import React, { FC } from "react";
+import CircularProgressBar from "./CircularProgressBar/CirularProgressBar";
 
 interface IRate {
   votes?: number;
@@ -21,11 +22,8 @@ const RaitingCircle: FC<IRate> = ({
         className
       )}
     >
-      <div className="circle flex justify-center items-center h-[86px] w-[86px] rounded-full overflow-hidden bg-orange-500">
-        <div className="w-[70px] h-[70px] flex justify-center items-center bg-black text-white text-[30px] rounded-full font-extrabold overflow-hidden">
-          {rate.toFixed(1)}
-        </div>
-      </div>
+      <CircularProgressBar rate={rate} />
+
       <div className="description text-white">
         <h3 className="text-[24px] font-extrabold">Players</h3>
         <p className="text-[16px] font-medium">{votes.toFixed(0)} votes</p>
