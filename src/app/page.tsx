@@ -5,9 +5,31 @@ import { Timer, User } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
+export const metadata = {
+  title: "Lorem Ipsum is simply dummy",
+  openGraph: {
+    title: "Lorem Ipsum is simply dummy",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting   industry.",
+  },
+};
+
 export default function Home() {
+  const jsonLd = {
+    "@context": "Lorem Ipsum is simply dummy",
+    "@type": "Article",
+    name: "Lorem Ipsum is simply dummy",
+    image: "/article-icon.png",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting   industry.",
+  };
+
   return (
     <main className="flex min-h-screen flex-col items-center justify-start gap-[40px] bg-[#FCFCFC] dark:bg-[#0E1219] pt-0 lg:pt-[40px] pb-[130px]">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <div className="container md:p-0 ">
         <Banner />
       </div>
