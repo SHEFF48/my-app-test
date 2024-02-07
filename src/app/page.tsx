@@ -8,10 +8,10 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-start gap-[40px] bg-[#FCFCFC] dark:bg-[#0E1219] pt-0 lg:pt-[40px] pb-[130px]">
-      <div className="container">
+      <div className="container md:p-0 ">
         <Banner />
       </div>
-      <div className="container mx-auto flex justify-between items-start gap-[60]">
+      <div className="container md:p-0 mx-auto flex justify-between items-start gap-[60]">
         <div className="content max-w-[810px]">
           <Breadcrumbs />
           <div className="arcticle-block flex flex-col gap-[60px]">
