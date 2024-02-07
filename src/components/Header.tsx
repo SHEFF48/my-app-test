@@ -13,13 +13,14 @@ import { Switch } from "./ui/switch";
 import { Input } from "./ui/input";
 import { ModeToggle } from "./ModeToogle";
 import Logo from "./Logo";
+import SocialLinks from "./SocialLinks";
 
 const Header = () => {
   return (
     <header className="w-full bg-white dark:bg-[#0E1219]">
       <div className="top-bar bg-gradient-to-r from-[#0DD0BA] to-[#2A86E5]">
         <div className="flex justify-between container mx-auto h-[58px] text-white">
-          <nav className="hidden lg:flex justify-center items-center gap-[31px] text-[14px] font-medium text-left tracking-[.5px]">
+          <nav className="hidden md:flex justify-center items-center gap-[31px] text-[14px] font-medium text-left tracking-[.5px]">
             <Link href={"/"}>Menu item 1</Link>
             <Link href={"/"}>Menu item 2</Link>
             <Link href={"/"}>Menu item 3</Link>
@@ -27,12 +28,7 @@ const Header = () => {
           </nav>
           <div className="right flex items-center gap-[20px] w-full md:w-auto justify-between md:justify-end">
             <div className="social-icons flex justify-center items-center gap-[19px]">
-              <Facebook />
-              <Twitter />
-              <Instagram />
-              <Youtube />
-              <Newspaper />
-              <Rss />
+              <SocialLinks />
             </div>
             <ModeToggle />
           </div>

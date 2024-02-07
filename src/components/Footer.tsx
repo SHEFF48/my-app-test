@@ -10,6 +10,7 @@ import {
   Youtube,
 } from "lucide-react";
 import Logo from "./Logo";
+import SocialLinks from "./SocialLinks";
 
 const Footer = () => {
   return (
@@ -29,12 +30,7 @@ const Footer = () => {
                 </p>
               </div>
               <div className="social-icons flex justify-center items-center gap-[24px] text-[#0DD0BA]">
-                <Facebook />
-                <Twitter />
-                <Instagram />
-                <Youtube />
-                <Newspaper />
-                <Rss />
+                <SocialLinks />
               </div>
             </div>
           </div>
