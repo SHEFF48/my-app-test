@@ -35,7 +35,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="right-block flex flex-col justify-between items-center lg:items-start flex-wrap gap-[30px] lg:pt-[90px] box-border">
-            <div className="flex gap-[50px] md:gap-[130px] justify-center md:justify-between items-start flex-wrap">
+            <div className="flex flex-col md:flex-row gap-[50px] md:gap-[130px] justify-center md:justify-between items-start flex-wrap">
               <div className="flex flex-col items-center w-full md:w-auto gap-[14px] text-white">
                 <h2 className="text-[24px] font-bold leading-[31px] tracking-[.5px] ">
                   Categhory
