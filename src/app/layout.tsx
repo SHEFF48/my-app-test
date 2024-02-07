@@ -42,7 +42,7 @@ export default function RootLayout({
           <Header />
           {children}
           <Footer />
-          <ShareSocial className=" hidden lg:fixed left-0 top-[286px] " />
+          <ShareSocial className=" hidden lg:flex flex-col fixed left-0 top-[286px] " />
         </ThemeProvider>
       </body>
     </html>

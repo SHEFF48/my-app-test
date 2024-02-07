@@ -8,7 +8,7 @@ interface IShareSocial {
 
 const ShareSocial: FC<IShareSocial> = ({ className }) => {
   return (
-    <div className={cn("flex flex-col", className)}>
+    <div className={cn("", className)}>
       <div className="flex justify-center items-center h-[40px] w-[40px] bg-[#3A579A] ">
         <Facebook className="text-white h-[20px] w-[20px]" />
       </div>
