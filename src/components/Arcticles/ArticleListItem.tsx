@@ -17,8 +17,15 @@ const ArticleListItem: React.FC<IArticleItem> = ({
 }) => {
   return (
     <div className="similar-article-card flex gap-[18px] p-[20px] justify-start items-center flex-col shadow rounded-[20px] bg-white dark:bg-[#202434]">
-      <div className="image relative w-[310px] lg:w-[347px] h-[171px] bg-green-500 rounded-[20px] overflow-hidden">
-        {imageURL && <Image src={imageURL} alt={title} fill />}
+      <div className="image relative w-[310px] lg:w-[347px] h-[171px] bg-green-500 rounded-[20px] overflow-hidden       ">
+        {imageURL && (
+          <Image
+            src={imageURL}
+            alt={title}
+            fill
+            style={{ objectFit: "cover" }}
+          />
+        )}
       </div>
 
       <div className="description flex flex-col gap-[12px] w-[310px] lg:w-[347px] text-center">

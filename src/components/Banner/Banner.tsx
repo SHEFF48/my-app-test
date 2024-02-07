@@ -4,14 +4,28 @@ import React from "react";
 import RaitingLine from "../RaitingLine";
 
 import RaitingCircle from "../RaitingCircle";
+import Image from "next/image";
 
 const Banner = () => {
   return (
     <div className="w-full bg-white dark:bg-[#0E1219] rounded-[40px] overflow-hidden shadow-sm dark:shadow-[0px_22px_59px_0px_rgba(42,134,229,0.07)]">
-      <div className="top-block flex justify-between items-center h-[184px] w-full px-[20px] md:px-[30px] lg:px-[56px] rounded-[40px]  bg-cyan-600">
-        <div className="left-block flex items-center gap-[15px] md:gap-[24px]">
-          <div className="img shrink-0 h-[89px] w-[89px] md:h-[120px] md:w-[120px] rounded-[10px] bg-amber-500"></div>
-          <div className="descripripion flex flex-col gap-[10px] shrink-1">
+      <div className="top-block relative flex justify-between items-center h-[184px] w-full px-[20px] md:px-[30px] lg:px-[56px] rounded-[40px]  bg-[#161C3A] overflow-hidden">
+        <Image
+          src={"/article-banner-bg.jpeg"}
+          alt="article banner background"
+          fill
+          style={{ objectFit: "cover", zIndex: 0, opacity: 0.2 }}
+        />
+        <div className="left-block flex items-center gap-[15px] md:gap-[24px] z-10">
+          <div className="img relative shrink-0 h-[89px] w-[89px] md:h-[120px] md:w-[120px] rounded-[10px] overflow-hidden">
+            <Image
+              src="/article-icon.png"
+              alt={"article-icon"}
+              fill
+              style={{ objectFit: "cover" }}
+            />
+          </div>
+          <div className="descripripion flex flex-col gap-[10px] shrink-1 z-10">
             <h2 className="text-[24px] md:text-[35px] lg:text-[30px] text-white font-bold tracking-[.5px]">
               Lorem Ipsum is simply dummy
             </h2>
@@ -44,7 +58,7 @@ const Banner = () => {
           rate={6.4}
           userRate={6.4}
           votes={12}
-          className="hidden lg:flex"
+          className="hidden lg:flex z-10"
         />
       </div>
       <div className="bottom-block hidden lg:flex justify-between items-center pl-[56px] pr-[33px] h-[50px]">
