@@ -51,7 +51,12 @@ const MenuList: FC<IMenuList> = ({
       {data.map((listItem, index) => {
         return (
           <li key={index}>
-            <Link href={listItem.link} onClick={() => clickHandler()}>
+            <Link
+              href={listItem.link}
+              onClick={() => {
+                typeof clickHandler == "function" && clickHandler();
+              }}
+            >
               {listItem.title}
             </Link>
           </li>

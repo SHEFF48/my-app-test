@@ -9,7 +9,7 @@ import SocialLinks from "./SocialLinks";
 const TopBar = () => {
   return (
     <div className="top-bar bg-gradient-to-r from-[#0DD0BA] to-[#2A86E5]">
-      <div className="flex justify-between container  md:px-0 mx-auto h-[58px] text-white">
+      <div className="flex justify-between container  md:px-0 lg:px-[10px] mx-auto h-[58px] text-white">
         <nav className="hidden md:flex justify-center items-center md:gap-[23px] lg:gap-[31px] text-[14px] font-medium text-left tracking-[.5px]">
           <Link
             href={"/"}
